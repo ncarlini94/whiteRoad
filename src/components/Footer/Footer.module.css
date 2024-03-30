@@ -1,3 +1,52 @@
 .footer {
-    padding: 2.7vh 0 8vh 0;
+  padding: 2.7vh 0 2vh 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 135vh;
+  margin: 0 auto;
+}
+
+.googleMap {
+  width: 66vh;
+  height: 40vh;
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: auto;
+}
+
+.copyRight{
+  margin-top: 8vh;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: auto;
+    flex-direction: column-reverse;
+    align-items: center;
   }
+
+  .list {
+    width: auto;
+    margin: 6vh auto 0 auto;
+  }
+
+  .googleMap {
+    width: 45vh;
+    height: 40vh;
+  }
+
+  .copyRight{
+    margin-top: 6vh;
+  }
+}

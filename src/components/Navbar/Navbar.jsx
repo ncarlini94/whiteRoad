@@ -31,6 +31,14 @@ const Navbar = () => {
   }, []);
 
 
+  const closeNavbar = () => {
+    const navbarToggler = document.getElementById('navbarTogglerDemo01');
+    if (navbarToggler.classList.contains('show')) {
+      navbarToggler.classList.remove('show');
+    }
+  };
+
+
 
   return (
     <>
@@ -53,17 +61,17 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <div className={`${styles.navbarLinkContainer}`}>
             <ul className="navbar-nav">
-              <li className="nav-item">
+              <li className="nav-item" onClick={closeNavbar}>
                 <Link className="nav-link active text-light me-1" aria-current="page" to="/">
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item" onClick={closeNavbar}>
                 <Link className="nav-link text-light me-1" to="/Servicio">
                   Servicios
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item" onClick={closeNavbar}>
                 <Link className="nav-link text-light" to='/Contacto'>
                   Turnos
                 </Link>
