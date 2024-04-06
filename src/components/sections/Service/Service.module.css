@@ -1,5 +1,16 @@
 .container{
-    padding: 0 auto 0 auto;
+    margin-top: 24vh;
+    padding: 10vh auto 0 auto;
+}
+
+
+.title{
+    font-size: 6vh;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 14vh;
 }
 
 .icon{
@@ -9,18 +20,18 @@
 .list{
     color: rgb(255, 255, 255);
     list-style: none;
-    padding: 20vh 0 10vh 0;
-    margin: 0 0 0 0;
+    padding: 6vh 0 10vh 0;
+    margin: 0 1.2vh 0 0;
 }
 
 .list li{
-    padding: 0.8vh 0 0.5vh 0;
+    padding: 0.8vh 0 0.2vh 0;
 }
 
 .listItem{
     position: relative;
     color: rgba(228, 228, 228, 0.74);
-    font-size: 2.3vh;
+    font-size: 3vh;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -36,6 +47,12 @@
 
     .container{
         padding: 0 0 0 0;
+    }
+
+    .title{
+        font-size: 2.4vh;
+        color: #fff;
+        margin: 0 auto 0 auto;
     }
 
     .list{

@@ -6,6 +6,8 @@ import Img3 from '../../assets/img3.jpg'
 import styles from './Homepage.module.css'
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
+import Service from '../../components/sections/Service/Service'
+import Contact from '../../components/sections/Contact/Contact'
 
 
 
@@ -29,7 +31,7 @@ const Homepage = () => {
 
     return (
         <>
-        <div className={`${styles.containerTop}`}>
+        <div className={`${styles.containerTop}`} id='Inicio'>
             {isLoading ? (
             <div className={`${styles.centered} bg-dark`}>
                 <div className="spinner-grow text-secondary" role="status">
@@ -61,13 +63,13 @@ const Homepage = () => {
                         src={Img1}>
                     </motion.img>
                 </div>
-                    <div className={`col-8`}>
+                <div className={`col-8`}>
                 <motion.div
+                    className={`${styles.textBox1}`}
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     animate={{ y: window.innerWidth / 8 }}
-                    transition={{ type: "Spring", delay: 0.2 }}
-                    className={`${styles.textBox1}`}>
+                    transition={{ type: "Spring", delay: 0.2 }}>
                     <h5>Tu taller especializado en mecánica de motos</h5>
                     <p>Descubre nuestro taller especializado en brindar servicios de alta calidad para mantener tu moto en su mejor estado. Confía en nuestros expertos para reparaciones y mantenimiento.</p>
                 </motion.div>
@@ -75,20 +77,22 @@ const Homepage = () => {
             </div>
 
             <div className={`${styles.box2} row`}>
+            <div className='col-7'>
                 <motion.div
+                    className={`${styles.textBox2}`}
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    animate={{ y: 200 }}
-                    transition={{ type: "Spring", delay: 0.2 }}
-                    className={`col-7`}>
+                    animate={{ y: window.innerWidth / 8 }}
+                    transition={{ type: "Spring", delay: 0.2 }}>
                     <h5>Expertos en cuidar tu moto como si fuera nuestra</h5>
                     <p>Somos tu destino confiable para el cuidado y la reparación de motos. Nuestro equipo experto está listo para atender todas las necesidades de tu moto.</p>
                 </motion.div>
+                </div>
                 <div className="col-5">
                     <motion.img
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        animate={{ x: window.innerWidth / -20 }}
+                        animate={{ x: window.innerWidth / 10 }}
                         transition={{ type: "Spring", delay: 0.45 }}
                         className={`${styles.Img2}`}
                         key={Img2}
@@ -97,7 +101,6 @@ const Homepage = () => {
                     </motion.img>
                 </div>
             </div>
-
             <div className={`${styles.box3} row`}>
                 <div className="col-4">
                 <motion.img
@@ -111,15 +114,20 @@ const Homepage = () => {
                         src={Img3}>
                     </motion.img>
                 </div>
+                <div  className={` col-8`}>
                 <motion.div
+                    className={`${styles.textBox3}`}
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    animate={{ y: 200 }}
-                    transition={{ type: "Spring", delay: 0.2 }} className={` col-8`}>
+                    animate={{ y: window.innerWidth / 8 }}
+                    transition={{ type: "Spring", delay: 0.2 }}>
                     <h5>Profesionales apasionados por las motos</h5>
                     <p>En nuestro taller, nos apasiona cuidar de tu moto. Ofrecemos servicios profesionales y atención personalizada para mantener tu vehículo en óptimas condiciones.</p>
                 </motion.div>
+                </div>
             </div>
+            <Service/>
+            <Contact/>
         </div>
         </>
     )

@@ -1,4 +1,4 @@
-import styles from './ServicePage.module.css'
+import styles from './Service.module.css'
 import { motion } from "framer-motion"
 
 const Servicios = () => {
@@ -6,7 +6,14 @@ const Servicios = () => {
 
   return (
     <>
-      <div className={`${styles.container} container-fluid bg-dark`}>
+      <div className={`${styles.container} border-top`} id='Service'>
+        <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    className={`${styles.boxTitle}`}
+                    transition={{ type: "Spring", delay: 0.20 }}>
+                        <h4 className={`${styles.title}`}>Servicios</h4>
+        </motion.div>
         <ul className={`${styles.list}`}>
           <motion.li
                     initial={{ opacity: 0 }}

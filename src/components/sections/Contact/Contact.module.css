@@ -1,19 +1,28 @@
 .container{
     align-items: center;
-    height: 74.2vh;
+    padding: 14vh 0 24vh 0;
+}
+
+.title{
+    font-size: 6vh;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
 }
 
 .box{
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 2.6vh;
-    margin: 0 auto 0 -24vh;
-    padding: 24vh 12vh 9vh 8vh;
+    font-size: 3.2vh;
+    margin: 4vh 10vh 0 auto;
+    padding: 10vh 1vh 0 8vh;
 }
 
 .imgPeople{
-    width: 20vh;
+    width: 26vh;
 }
 
 @media screen and (max-width:1000px) {

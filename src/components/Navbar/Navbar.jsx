@@ -3,7 +3,6 @@ import styles from './Navbar.module.css'
 import WhatsApp from '../../assets/wpp.png'
 import Instagram from '../../assets/instagram.png'
 import Facebook from '../../assets/facebook.png'
-import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 
@@ -42,7 +41,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''} navbar navbar-expand-lg sticky-top`}>
+    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''} navbar navbar-expand-lg sticky-lg-top fixed-bottom`}>
       <div className="container-fluid">
         <div className="d-flex align-items-center">
           <img className={`${styles.logo}`} src={Logo} alt="Logo" />
@@ -62,19 +61,19 @@ const Navbar = () => {
           <div className={`${styles.navbarLinkContainer}`}>
             <ul className="navbar-nav">
               <li className="nav-item" onClick={closeNavbar}>
-                <Link className="nav-link active text-light me-1" aria-current="page" to="/">
-                  Home
-                </Link>
+                <a className="nav-link active text-light me-1" aria-current="page" href="#Inicio">
+                  Inicio
+                </a>
               </li>
               <li className="nav-item" onClick={closeNavbar}>
-                <Link className="nav-link text-light me-1" to="/Servicio">
+                <a className="nav-link text-light me-1" href="#Service">
                   Servicios
-                </Link>
+                </a>
               </li>
               <li className="nav-item" onClick={closeNavbar}>
-                <Link className="nav-link text-light" to='/Contacto'>
+                <a className="nav-link text-light" href='#Contact'>
                   Turnos
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

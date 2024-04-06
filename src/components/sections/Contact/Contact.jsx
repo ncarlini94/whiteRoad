@@ -1,13 +1,25 @@
-import People2 from '../../assets/people2.png'
-import styles from './ContactPage.module.css'
+import People2 from '../../../assets/people2.png'
+import styles from './Contact.module.css'
+import { motion } from "framer-motion"
 
 const ContactPage = () => {
 
 
   return (
     <>
-      <div className={`${styles.container} container-fluid bg-dark`}>
-      <div className={`${styles.box} row`}>
+      <div className={`${styles.container} container-fluid border-top`} id='Contact'>
+      <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    className={`${styles.boxTitle}`}
+                    transition={{ type: "Spring", delay: 0.20 }}>
+                        <h4 className={`${styles.title}`}>Contactanos</h4>
+        </motion.div>
+      <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ type: "Spring", delay: 0.45 }}
+          className={`${styles.box} row`}>
         <div className='col-2'>
           <img src={People2} className={`${styles.imgPeople}`}></img>
         </div>
@@ -27,7 +39,7 @@ const ContactPage = () => {
               Envíanos tu consulta y nuestro equipo responderá rápidamente para confirmar la disponibilidad y coordinar tu cita en el horario que mejor se ajuste a tu agenda.
           </p>
         </div>
-      </div>
+      </motion.div>
       </div>
     </>
   )
