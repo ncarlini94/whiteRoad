@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    padding: 6vh 0;
+    border-bottom-style: solid;
+    height: 80vh;
+  }
+  
+  .title{
+      text-align: center;
+      height: 14vh;
+      font-size: 7vh;
+  }
+  
+  .boxContent{
+      display: flex;
+      align-items: center;
+  }
+  
+  .boxLeft, .boxRight {
+      flex: 1;
+      text-align: center;
+    }
+
+    .boxLeftTitle, .boxRightTitle{
+        padding-bottom: 3vh;
+    }
+
+    ul{
+        list-style: none;
+      }

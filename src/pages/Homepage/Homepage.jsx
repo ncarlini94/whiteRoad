@@ -1,28 +1,18 @@
-import Banner from '../../assets/banner.png'
-import Marca from '../../assets/nombreMarca2.png'
 import Img1 from '../../assets/img1.jpg'
 import Img2 from '../../assets/img2.jpg'
 import Img3 from '../../assets/img3.jpg'
 import styles from './Homepage.module.css'
-import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import Service from '../../components/sections/Service/Service'
 import Contact from '../../components/sections/Contact/Contact'
+import Banner from '../../components/Banner/Banner'
+import Motos from '../../components/sections/Motos/Motos'
+import Taller from '../../components/sections/Taller/Taller'
+import Mecanica from '../../components/sections/Contact/Mecanica/Mecanica'
 
 
 
 const Homepage = () => {
-
-    const [isLoading, setIsLoading] = useState(true);
-
-
-    useEffect(() => {
-        const img = new Image();
-        img.onload = () => {
-        setIsLoading(false);
-        };
-        img.src = Banner;
-    }, []);
 
 
 
@@ -32,24 +22,13 @@ const Homepage = () => {
     return (
         <>
         <div className={`${styles.containerTop}`} id='Inicio'>
-            {isLoading ? (
-            <div className={`${styles.centered} bg-dark`}>
-                <div className="spinner-grow text-secondary" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                </div>
-            </div>
-        ): (
-            <>
-                <motion.img
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 0.46 }}
-                        transition={{ type: "Spring", delay: 0.45 }} className={`${styles.Marca}`} src={Marca}>
-                        </motion.img>
-                <img className={`${styles.banner} bg-dark`} src={Banner}/>
-            </>
-        )}
+            <Banner/>
         </div>
         <div className={`${ styles.containerCenter} text-light container-fluid bg-dark`}>
+            <Motos/>
+            <Taller/>
+            <Mecanica/>
+            <Service/>
             <div className={`${styles.box1} row`}>
                 <div className="col-4">
                 <motion.img
@@ -126,7 +105,6 @@ const Homepage = () => {
                 </motion.div>
                 </div>
             </div>
-            <Service/>
             <Contact/>
         </div>
         </>

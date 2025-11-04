@@ -66,8 +66,18 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item" onClick={closeNavbar}>
-                <a className="nav-link text-light me-1" href="#Service">
-                  Servicios
+                <a className="nav-link text-light" href='#Motos'>
+                  Motos
+                </a>
+              </li>
+              <li className="nav-item" onClick={closeNavbar}>
+                <a className="nav-link text-light me-1" href="#Taller">
+                  Taller
+                </a>
+              </li>
+              <li className="nav-item" onClick={closeNavbar}>
+                <a className="nav-link text-light" href='#Service'>
+                  Service
                 </a>
               </li>
               <li className="nav-item" onClick={closeNavbar}>

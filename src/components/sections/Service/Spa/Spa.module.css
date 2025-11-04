@@ -1,0 +1,36 @@
+.container {
+    padding: 12vh 0;
+    height: auto;
+    border-bottom-style: solid;
+  }
+
+  .box{
+    display: flex;
+    padding: 10vh 0;
+  }
+  
+  .title{
+      text-align: center;
+      height: 14vh;
+      font-size: 7vh;
+  }
+  
+  .boxContent{
+      display: flex;
+      align-items: center;
+      width: 100%;
+  }
+
+  .textBoxLeft{
+    font-size: 3.4vh;
+  }
+  
+  
+  .boxLeft, .boxRight {
+      flex: 1;
+      text-align: center;
+    }
+  
+    ul{
+      list-style: none;
+    }

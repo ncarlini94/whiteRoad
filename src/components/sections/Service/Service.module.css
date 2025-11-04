@@ -1,16 +1,15 @@
 .container{
-    margin-top: 24vh;
-    padding: 10vh auto 0 auto;
+    padding: 0 auto 0 auto;
+    height: auto;
 }
 
 
 .title{
-    font-size: 6vh;
+    font-size: 8vh;
     color: #fff;
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: 14vh;
 }
 
 .icon{

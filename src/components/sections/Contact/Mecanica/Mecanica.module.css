@@ -1,0 +1,11 @@
+.container{
+    padding: 6vh 1vh;
+    border-bottom-style: solid;
+    height: 60vh;
+}
+
+.title{
+    font-size: 6vh;
+    text-align: center;
+    padding-bottom: 5vh;
+}
