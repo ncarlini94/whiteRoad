@@ -1,4 +1,4 @@
-import Banner from '../../assets/banner.png'
+import Banner from '../../assets/Banner.png'
 import Marca from '../../assets/nombreMarca2.png'
 import Img1 from '../../assets/img1.jpg'
 import Img2 from '../../assets/img2.jpg'
@@ -45,7 +45,7 @@ const Homepage = () => {
                         whileInView={{ opacity: 0.46 }}
                         transition={{ type: "Spring", delay: 0.45 }} className={`${styles.Marca}`} src={Marca}>
                         </motion.img>
-                <img className={`${styles.banner} bg-dark`} src={Banner}/>
+                <img className={`${styles.banner} bg-dark`} src={Banner} alt='Banner'/>
             </>
         )}
         </div>
