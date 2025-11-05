@@ -83,7 +83,7 @@ const Navbar = () => {
     <div className={`${styles.stickyContainer}`}>
     <ul className={`${styles.sticky}`}>
         <li className='bg-dark'>
-            <a href='https://wa.me/1123378575' rel="noopener noreferrer" target="blank">
+            <a href='https://wa.me/1140273397' rel="noopener noreferrer" target="blank">
               <img className={`${styles.img}`} src={WhatsApp}/>
             </a>
         </li>

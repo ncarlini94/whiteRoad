@@ -1,4 +1,4 @@
-import Banner from '../../assets/Banner.png'
+import Banner from '../../assets/Banner.webp'
 import Marca from '../../assets/nombreMarca2.png'
 import Img1 from '../../assets/img1.jpg'
 import Img2 from '../../assets/img2.jpg'
