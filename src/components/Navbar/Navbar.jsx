@@ -60,17 +60,17 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <div className={`${styles.navbarLinkContainer}`}>
             <ul className="navbar-nav">
-              <li className="nav-item" onClick={closeNavbar}>
+              <li className={`${styles.navItem} nav-item`} onClick={closeNavbar}>
                 <a className="nav-link active text-light me-1" aria-current="page" href="#Inicio">
                   Inicio
                 </a>
               </li>
-              <li className="nav-item" onClick={closeNavbar}>
+              <li className={`${styles.navItem} nav-item`} onClick={closeNavbar}>
                 <a className="nav-link text-light me-1" href="#Service">
                   Servicios
                 </a>
               </li>
-              <li className="nav-item" onClick={closeNavbar}>
+              <li className={`${styles.navItem} nav-item`} onClick={closeNavbar}>
                 <a className="nav-link text-light" href='#Contact'>
                   Turnos
                 </a>

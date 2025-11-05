@@ -11,7 +11,7 @@ const Footer = () => {
                     <li className=" col"><a href="#" className="nav-link text-light"></a></li>
                     <li className="col"><a href="#" className="nav-link text-light"></a></li>
                 </ul>
-                <p className={`${styles.copyRight} text-light col`}>© 2025 White Road Mecanica</p>
+                <p className={`${styles.copyRight} text-light col`}>© 2025 White Road Mecanica | <a style={{textDecoration:'none'}} href='https://nicolascarlini.netlify.app/'>Nico</a></p>
               </div>
                 <iframe
                   className={`${styles.googleMap}`}

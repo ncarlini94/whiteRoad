@@ -124,14 +124,13 @@
   }
 
   .banner{
-    width: 48.7vh;
     height: 50vh;
   }
 
   .Marca {
     position: absolute;
-    top: 26vh;
-    right: 0vh;
+    top: 30vh;
+    right: 6vh;
     z-index: 1;
     width: 72vw;
     height: auto;
