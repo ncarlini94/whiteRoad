@@ -21,16 +21,20 @@ const ContactPage = () => {
           transition={{ type: "Spring", delay: 0.45 }}
           className={`${styles.box} row`}>
         <div className='col-2'>
-          <img src={People2} className={`${styles.imgPeople}`}></img>
+          <img src={People2} className={`${styles.imgPeople}`} alt="Icono de contacto - Persona"></img>
         </div>
         <div className={`${styles.textBox} col-10 text-light`}>
           <p>
+              Lunes a viernes
+              10:00–13:00 / 15:00–19:00
+              <br/>
+              <br/>
               ¡Programa tu service en un instante!
               <br/>
               <br/>
               En nuestro taller mecánico, simplificamos el proceso de reserva de turnos para tu comodidad.
               Solo necesitas enviar un mensaje por
-              <button className='' style={{background:'transparent', border:'none'}}>
+              <button className='' style={{background:'transparent', border:'none'}} aria-label="Enviar mensaje por WhatsApp">
                   <a href='https://wa.me/1140273397' style={{color:'rgba(32, 255, 2, 0.945)'}}> WhatsApp </a>
               </button>
               para asegurar la atención que tu moto merece.

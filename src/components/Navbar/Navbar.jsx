@@ -41,10 +41,10 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''} navbar navbar-expand-lg sticky-lg-top fixed-bottom`}>
+    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''} navbar navbar-expand-lg sticky-lg-top fixed-bottom`} role="navigation" aria-label="Navegación principal">
       <div className="container-fluid">
         <div className="d-flex align-items-center">
-          <img className={`${styles.logo}`} src={Logo} alt="Logo" />
+          <img className={`${styles.logo}`} src={Logo} alt="Logo White Road - Taller de motos" title="White Road" />
         </div>
         <button
           className={`${styles.toggler} navbar-toggler`}
@@ -55,7 +55,7 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className=' navbar-toggler'><i className={`${styles.icon} bi bi-list-nested`}></i></span>
+          <span className=' navbar-toggler' aria-hidden="true"><i className={`${styles.icon} bi bi-list-nested`}></i></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <div className={`${styles.navbarLinkContainer}`}>
@@ -80,21 +80,21 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-    <div className={`${styles.stickyContainer}`}>
+    <div className={`${styles.stickyContainer}`} role="complementary" aria-label="Enlaces de redes sociales">
     <ul className={`${styles.sticky}`}>
         <li className='bg-dark'>
-            <a href='https://wa.me/1140273397' rel="noopener noreferrer" target="blank">
-              <img className={`${styles.img}`} src={WhatsApp}/>
+            <a href='https://wa.me/1140273397' rel="noopener noreferrer" target="blank" aria-label="Enviar mensaje por WhatsApp">
+              <img className={`${styles.img}`} src={WhatsApp} alt='WhatsApp'/>
             </a>
         </li>
         <li className='bg-dark'>
-          <a href='https://www.instagram.com/mecanicawhiteroad/' rel="noopener noreferrer" target="blank">
-            <img className={`${styles.img}`} src={Instagram}/>
+          <a href='https://www.instagram.com/mecanicawhiteroad/' rel="noopener noreferrer" target="blank" aria-label="Visitar perfil de Instagram">
+            <img className={`${styles.img}`} src={Instagram} alt='Instagram'/>
           </a>
         </li>
         <li className='bg-dark'>
-          <a href='https://www.facebook.com/profile.php?id=100082820787803&locale=es_LA' rel="noopener noreferrer" target="blank">
-            <img className={`${styles.img}`} src={Facebook}/>
+          <a href='https://www.facebook.com/profile.php?id=100082820787803&locale=es_LA' rel="noopener noreferrer" target="blank" aria-label="Visitar página de Facebook">
+            <img className={`${styles.img}`} src={Facebook} alt='Facebook'/>
           </a>
         </li>
     </ul>
