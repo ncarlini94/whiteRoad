@@ -40,6 +40,10 @@
   border-radius: 14px;
 }
 
+.textBox1{
+  padding-top: 25vh;
+}
+
 .box1 h5{
   text-align: center;
   padding: 0;
@@ -57,9 +61,8 @@
   padding-top: 16vh;
 }
 
-.box2 div{
-  margin: 0;
-  padding: 0;
+.textBox2{
+  padding-top: 25vh;
 }
 
 .box2 h5{
@@ -79,6 +82,11 @@
   border-radius: 14px;
   margin: 0;
   padding: 0;
+}
+
+
+.textBox3{
+  padding-top: 25vh;
 }
 
 .box3 h5{
@@ -128,15 +136,17 @@
   }
 
   .banner{
-    height: 50vh;
+  max-width: 100%;
+  height: auto;
+
   }
 
   .Marca {
     position: absolute;
-    top: 30vh;
-    right: 6vh;
+    top: 12vh;
+    right: 8vh;
     z-index: 1;
-    width: 72vw;
+    width: 20vh;
     height: auto;
     opacity: 0.46;
     border: black 2vh;
@@ -151,9 +161,8 @@
   .textBox1{
     background-color: rgba(48, 48, 48, 0.8);
     border-radius: 0.8vh;
-    width: 30vh;
-    height: 14vh;
-    margin: 2vh 0 0 0;
+    margin-top: 6vh;
+    padding: 1vh;
   }
 
   .box1 h5{
@@ -178,12 +187,12 @@
 
   .textBox2 {
     position: absolute;
-    left: 2vh;
-    width: 28vh;
+    margin-top: 8.5vh;
+    width: 30vh;
     background-color: rgba(48, 48, 48, 0.8);
     border-radius: 0.8vh;
     z-index: 2;
-    padding: 10vh 2vh;
+    padding: 1vh;
   }
 
   .box2 h5{
@@ -205,9 +214,8 @@
   .textBox3{
     background-color: rgba(48, 48, 48, 0.8);
     border-radius: 0.8vh;
-    width: 28vh;
-    height: auto;
-    padding: 1.2vh 0;
+    margin-top: 8.5vh;
+    padding: 1vh;
   }
 
   .box3 h5{
@@ -225,7 +233,7 @@
   }
 
   .Img1, .Img2, .Img3 {
-    width: 38vw;
+    width: 44vw;
     height: auto;
     border-radius: 14px;
     margin: 0;
