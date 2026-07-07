@@ -83,7 +83,13 @@ const Navbar = () => {
     <div className={`${styles.stickyContainer}`} role="complementary" aria-label="Enlaces de redes sociales">
     <ul className={`${styles.sticky}`}>
         <li className='bg-dark'>
-            <a href='https://wa.me/1140273397' rel="noopener noreferrer" target="blank" aria-label="Enviar mensaje por WhatsApp">
+            <a
+              href='https://wa.me/1140273397'
+              rel="noopener noreferrer"
+              target="_blank"
+              aria-label="Enviar mensaje por WhatsApp"
+              onClick={() => window.gtag_report_conversion && window.gtag_report_conversion()}
+            >
               <img className={`${styles.img}`} src={WhatsApp} alt='WhatsApp'/>
             </a>
         </li>
