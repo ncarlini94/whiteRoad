@@ -28,6 +28,21 @@
       gtag('js', new Date());
       gtag('config', 'AW-11022426549');
     </script>
+    <!-- Event snippet for Contacto conversion page -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.open(url, '_blank');
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-11022426549/qzyJCLeszMocELXD84cp',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

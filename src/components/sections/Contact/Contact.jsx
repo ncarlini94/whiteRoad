@@ -34,9 +34,15 @@ const ContactPage = () => {
               <br/>
               En nuestro taller mecánico, simplificamos el proceso de reserva de turnos para tu comodidad.
               Solo necesitas enviar un mensaje por
-              <button className='' style={{background:'transparent', border:'none'}} aria-label="Enviar mensaje por WhatsApp">
-                  <a href='https://wa.me/1140273397' style={{color:'rgba(32, 255, 2, 0.945)'}}> WhatsApp </a>
-              </button>
+              <a
+                href='https://wa.me/1140273397'
+                style={{background:'transparent', border:'none', color:'rgba(32, 255, 2, 0.945)'}}
+                aria-label="Enviar mensaje por WhatsApp"
+                onClick={(e) => {
+                  e.preventDefault()
+                  window.gtag_report_conversion('https://wa.me/1140273397')
+                }}
+              > WhatsApp </a>
               para asegurar la atención que tu moto merece.
               <br/>
               <br/>
